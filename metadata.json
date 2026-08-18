@@ -1,0 +1,12 @@
+{
+  "name": "Auvix",
+  "description": "Real-time communication platform with authentic voice rooms, video calls, screen sharing, server channels, and instant chat.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "display-capture"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

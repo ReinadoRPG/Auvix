@@ -1,0 +1,47 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Public and account user profile data stored in Firestore",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "Unique Firebase Auth user ID" },
+        "username": { "type": "string", "description": "Unique handle for the user", "maxLength": 32, "pattern": "^[a-z0-9_.]+$" },
+        "displayName": { "type": "string", "description": "Friendly display name", "maxLength": 64 },
+        "email": { "type": "string", "description": "User email address", "maxLength": 128 },
+        "avatarUrl": { "type": "string", "description": "URL to user profile picture", "maxLength": 512 },
+        "bannerUrl": { "type": "string", "description": "URL to user banner image", "maxLength": 512 },
+        "status": { "type": "string", "description": "Presence status", "enum": ["ONLINE", "IDLE", "DND", "OFFLINE"] },
+        "customStatus": { "type": "string", "description": "Short custom status message", "maxLength": 128 },
+        "bio": { "type": "string", "description": "User bio description", "maxLength": 256 },
+        "createdAt": { "type": "string", "description": "ISO timestamp of account creation" },
+        "updatedAt": { "type": "string", "description": "ISO timestamp of profile update" }
+      },
+      "required": ["userId", "username", "email"]
+    },
+    "ServerDocument": {
+      "title": "ServerDocument",
+      "description": "Server entity synchronized in Firestore",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique server ID" },
+        "name": { "type": "string", "description": "Server name", "maxLength": 64 },
+        "description": { "type": "string", "description": "Server description", "maxLength": 256 },
+        "iconUrl": { "type": "string", "description": "Server icon URL", "maxLength": 512 },
+        "ownerId": { "type": "string", "description": "Owner user ID" },
+        "createdAt": { "type": "string", "description": "ISO timestamp of server creation" }
+      },
+      "required": ["id", "name", "ownerId"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profiles indexed by Firebase Auth UID"
+    },
+    "/servers/{serverId}": {
+      "schema": "ServerDocument",
+      "description": "Community and private servers"
+    }
+  }
+}

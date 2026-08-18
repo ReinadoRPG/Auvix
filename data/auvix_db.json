@@ -1,0 +1,336 @@
+{
+  "users": [
+    {
+      "id": "usr_system_admin",
+      "username": "AuvixBot",
+      "email": "bot@auvix.app",
+      "avatarUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=80",
+      "status": "ONLINE",
+      "customStatus": "⚡ Conectando pessoas em tempo real",
+      "passwordHash": "$2b$10$XGXs/NyrwIZLCpDWaCTKNOLBrvc3zYphyRWeHsg.zD2lBAl8riQGm",
+      "createdAt": "2026-08-17T20:59:22.675Z",
+      "updatedAt": "2026-08-17T20:59:22.675Z"
+    },
+    {
+      "id": "usr_d0319c72-d987-423e-b2a7-8258fd90dd52",
+      "username": "Victor_Dev",
+      "email": "victor@auvix.app",
+      "avatarUrl": "https://api.dicebear.com/7.x/bottts/svg?seed=Victor_Dev",
+      "status": "ONLINE",
+      "passwordHash": "$2b$10$TLk11JbO5CW/4jwj4bffZeOHRgNBlosyssMudVB52GlX4hAkW7LJu",
+      "createdAt": "2026-08-17T20:59:32.670Z",
+      "updatedAt": "2026-08-17T20:59:35.219Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "ses_95292c0f-60e3-4798-bf84-8e20e9444909",
+      "userId": "usr_d0319c72-d987-423e-b2a7-8258fd90dd52",
+      "refreshTokenHash": "032c541514f8a04b4a8d1f2c510408303117b2dfacdf9bccff0abfdb399cf3b9",
+      "expiresAt": "2026-08-24T20:59:32.675Z",
+      "createdAt": "2026-08-17T20:59:32.675Z"
+    },
+    {
+      "id": "ses_2e014d3f-2e97-422b-a8bb-99980f7cb59d",
+      "userId": "usr_d0319c72-d987-423e-b2a7-8258fd90dd52",
+      "refreshTokenHash": "f346bfd1266bf86b0a3b964ec2bc570809bb07d5b57c0b5f6d06dcc9695cd821",
+      "expiresAt": "2026-08-24T20:59:35.219Z",
+      "createdAt": "2026-08-17T20:59:35.219Z"
+    }
+  ],
+  "servers": [
+    {
+      "id": "srv_auvix_global",
+      "name": "Auvix Central",
+      "iconUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=80",
+      "description": "Servidor oficial da comunidade Auvix — Comunicação em Tempo Real sem barreiras.",
+      "ownerId": "usr_system_admin",
+      "channels": [
+        {
+          "id": "chn_text_geral",
+          "serverId": "srv_auvix_global",
+          "name": "geral",
+          "type": "TEXT",
+          "topic": "Canal oficial de boas-vindas e discussões da comunidade Auvix",
+          "position": 1,
+          "createdAt": "2026-08-17T20:59:22.675Z"
+        },
+        {
+          "id": "chn_text_conversa",
+          "serverId": "srv_auvix_global",
+          "name": "bate-papo",
+          "type": "TEXT",
+          "topic": "Conversas livres, memes e novidades",
+          "position": 2,
+          "createdAt": "2026-08-17T20:59:22.675Z"
+        },
+        {
+          "id": "chn_voice_geral",
+          "serverId": "srv_auvix_global",
+          "name": "🔊 Sala Principal",
+          "type": "VOICE",
+          "topic": "Canal de voz aberto com suporte a áudio HD, câmera e compartilhamento de tela",
+          "position": 3,
+          "createdAt": "2026-08-17T20:59:22.675Z"
+        },
+        {
+          "id": "chn_voice_lounge",
+          "serverId": "srv_auvix_global",
+          "name": "🔊 Gaming & Stream",
+          "type": "VOICE",
+          "topic": "Sala para transmissões ao vivo e sessões de jogos",
+          "position": 4,
+          "createdAt": "2026-08-17T20:59:22.675Z"
+        }
+      ],
+      "roles": [
+        {
+          "id": "role_owner_srv_auvix_global",
+          "serverId": "srv_auvix_global",
+          "name": "Proprietário",
+          "color": "#6366f1",
+          "position": 1,
+          "permissions": [
+            "VIEW_CHANNEL",
+            "SEND_MESSAGES",
+            "CONNECT",
+            "SPEAK",
+            "STREAM",
+            "MANAGE_CHANNEL",
+            "MANAGE_SERVER",
+            "MANAGE_MESSAGES",
+            "MANAGE_ROLES",
+            "KICK_MEMBERS",
+            "BAN_MEMBERS"
+          ]
+        },
+        {
+          "id": "role_admin_srv_auvix_global",
+          "serverId": "srv_auvix_global",
+          "name": "Admin",
+          "color": "#06b6d4",
+          "position": 2,
+          "permissions": [
+            "VIEW_CHANNEL",
+            "SEND_MESSAGES",
+            "CONNECT",
+            "SPEAK",
+            "STREAM",
+            "MANAGE_CHANNEL",
+            "MANAGE_MESSAGES",
+            "KICK_MEMBERS"
+          ]
+        },
+        {
+          "id": "role_member_srv_auvix_global",
+          "serverId": "srv_auvix_global",
+          "name": "Membro",
+          "color": "#94a3b8",
+          "position": 3,
+          "permissions": [
+            "VIEW_CHANNEL",
+            "SEND_MESSAGES",
+            "CONNECT",
+            "SPEAK",
+            "STREAM"
+          ]
+        }
+      ],
+      "members": [
+        {
+          "id": "mem_usr_system_admin_srv_auvix_global",
+          "serverId": "srv_auvix_global",
+          "userId": "usr_system_admin",
+          "roleId": "role_owner_srv_auvix_global",
+          "user": {
+            "id": "usr_system_admin",
+            "username": "AuvixBot",
+            "email": "bot@auvix.app",
+            "avatarUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=80",
+            "status": "ONLINE",
+            "customStatus": "⚡ Conectando pessoas em tempo real",
+            "createdAt": "2026-08-17T20:59:22.675Z",
+            "updatedAt": "2026-08-17T20:59:22.675Z"
+          },
+          "joinedAt": "2026-08-17T20:59:22.675Z"
+        }
+      ],
+      "memberCount": 2,
+      "createdAt": "2026-08-17T20:59:22.675Z",
+      "updatedAt": "2026-08-17T20:59:22.675Z"
+    }
+  ],
+  "serverMembers": [
+    {
+      "id": "mem_usr_system_admin_srv_auvix_global",
+      "serverId": "srv_auvix_global",
+      "userId": "usr_system_admin",
+      "roleId": "role_owner_srv_auvix_global",
+      "user": {
+        "id": "usr_system_admin",
+        "username": "AuvixBot",
+        "email": "bot@auvix.app",
+        "avatarUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=80",
+        "status": "ONLINE",
+        "customStatus": "⚡ Conectando pessoas em tempo real",
+        "createdAt": "2026-08-17T20:59:22.675Z",
+        "updatedAt": "2026-08-17T20:59:22.675Z"
+      },
+      "joinedAt": "2026-08-17T20:59:22.675Z"
+    },
+    {
+      "id": "mem_usr_d0319c72-d987-423e-b2a7-8258fd90dd52_srv_auvix_global",
+      "serverId": "srv_auvix_global",
+      "userId": "usr_d0319c72-d987-423e-b2a7-8258fd90dd52",
+      "roleId": "role_member_srv_auvix_global",
+      "user": {
+        "id": "usr_d0319c72-d987-423e-b2a7-8258fd90dd52",
+        "username": "Victor_Dev",
+        "email": "victor@auvix.app",
+        "avatarUrl": "https://api.dicebear.com/7.x/bottts/svg?seed=Victor_Dev",
+        "status": "ONLINE",
+        "createdAt": "2026-08-17T20:59:32.670Z",
+        "updatedAt": "2026-08-17T20:59:32.670Z"
+      },
+      "joinedAt": "2026-08-17T20:59:32.670Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": "role_owner_srv_auvix_global",
+      "serverId": "srv_auvix_global",
+      "name": "Proprietário",
+      "color": "#6366f1",
+      "position": 1,
+      "permissions": [
+        "VIEW_CHANNEL",
+        "SEND_MESSAGES",
+        "CONNECT",
+        "SPEAK",
+        "STREAM",
+        "MANAGE_CHANNEL",
+        "MANAGE_SERVER",
+        "MANAGE_MESSAGES",
+        "MANAGE_ROLES",
+        "KICK_MEMBERS",
+        "BAN_MEMBERS"
+      ]
+    },
+    {
+      "id": "role_admin_srv_auvix_global",
+      "serverId": "srv_auvix_global",
+      "name": "Admin",
+      "color": "#06b6d4",
+      "position": 2,
+      "permissions": [
+        "VIEW_CHANNEL",
+        "SEND_MESSAGES",
+        "CONNECT",
+        "SPEAK",
+        "STREAM",
+        "MANAGE_CHANNEL",
+        "MANAGE_MESSAGES",
+        "KICK_MEMBERS"
+      ]
+    },
+    {
+      "id": "role_member_srv_auvix_global",
+      "serverId": "srv_auvix_global",
+      "name": "Membro",
+      "color": "#94a3b8",
+      "position": 3,
+      "permissions": [
+        "VIEW_CHANNEL",
+        "SEND_MESSAGES",
+        "CONNECT",
+        "SPEAK",
+        "STREAM"
+      ]
+    }
+  ],
+  "channels": [
+    {
+      "id": "chn_text_geral",
+      "serverId": "srv_auvix_global",
+      "name": "geral",
+      "type": "TEXT",
+      "topic": "Canal oficial de boas-vindas e discussões da comunidade Auvix",
+      "position": 1,
+      "createdAt": "2026-08-17T20:59:22.675Z"
+    },
+    {
+      "id": "chn_text_conversa",
+      "serverId": "srv_auvix_global",
+      "name": "bate-papo",
+      "type": "TEXT",
+      "topic": "Conversas livres, memes e novidades",
+      "position": 2,
+      "createdAt": "2026-08-17T20:59:22.675Z"
+    },
+    {
+      "id": "chn_voice_geral",
+      "serverId": "srv_auvix_global",
+      "name": "🔊 Sala Principal",
+      "type": "VOICE",
+      "topic": "Canal de voz aberto com suporte a áudio HD, câmera e compartilhamento de tela",
+      "position": 3,
+      "createdAt": "2026-08-17T20:59:22.675Z"
+    },
+    {
+      "id": "chn_voice_lounge",
+      "serverId": "srv_auvix_global",
+      "name": "🔊 Gaming & Stream",
+      "type": "VOICE",
+      "topic": "Sala para transmissões ao vivo e sessões de jogos",
+      "position": 4,
+      "createdAt": "2026-08-17T20:59:22.675Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg_welcome_001",
+      "channelId": "chn_text_geral",
+      "authorId": "usr_system_admin",
+      "author": {
+        "id": "usr_system_admin",
+        "username": "AuvixBot",
+        "email": "bot@auvix.app",
+        "avatarUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=150&auto=format&fit=crop&q=80",
+        "status": "ONLINE",
+        "customStatus": "⚡ Conectando pessoas em tempo real",
+        "createdAt": "2026-08-17T20:59:22.675Z",
+        "updatedAt": "2026-08-17T20:59:22.675Z"
+      },
+      "content": "👋 **Bem-vindo ao Auvix!**\nEsta é uma plataforma moderna de comunicação em tempo real desenvolvida para chamadas de áudio, vídeo, compartilhamento de tela com WebRTC de baixa latência e salas de texto instantâneas.\n\nExperimente entrar nos canais de voz, ligar sua câmera ou transmitir sua tela!",
+      "reactions": [
+        {
+          "emoji": "🚀",
+          "userIds": [
+            "usr_system_admin"
+          ],
+          "count": 1
+        },
+        {
+          "emoji": "🔥",
+          "userIds": [
+            "usr_system_admin"
+          ],
+          "count": 1
+        }
+      ],
+      "createdAt": "2026-08-17T20:59:22.675Z",
+      "pinned": true
+    }
+  ],
+  "invites": [
+    {
+      "id": "inv_global_welcome",
+      "code": "auvix-welcome",
+      "serverId": "srv_auvix_global",
+      "inviterId": "usr_system_admin",
+      "maxUses": 0,
+      "uses": 0,
+      "createdAt": "2026-08-17T20:59:22.675Z"
+    }
+  ]
+}
